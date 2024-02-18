@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./images/earth.png";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainTitles from './components/MainTitles'
+import LandingPage from "./components/LandingPage";
+import SubTitlePage from "./components/SubTitlePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+   
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="mainTitles" element={<MainTitles />} />
+        <Route exact path="subTitlePage" element={<SubTitlePage />} />
+        {/*  <Route exact path="/products" element={<Products/>}/>
+      <Route exact path="/profile" element={<Profile/>}/>
+      <Route exact path="/services" element={<Services/>}/>
+      <Route exact path="/allproducts" element={<AllProducts/>}/>
+      <Route exact path='/login' element={<Login/>} />
+      <Route path="/register" element={<Register />} />
+      <Route path='/contact' element={<Contact/>} />
+      <Route path='/thankyou' element={<ThankYouPage/>} />
+      <Route path='/cart' element={<CartPage />} />
+      <Route path='/order' element={<OrderPage/>} />
+      <Route path='/favorites' element={<Favorites/>} /> */}
+      </Routes>
+      {/* <Footer/> */}
+    </BrowserRouter>
   );
 }
 
