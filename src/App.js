@@ -1,4 +1,3 @@
-import logo from "./images/earth.png";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainTitles from './components/MainTitles'
