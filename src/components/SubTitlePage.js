@@ -13,6 +13,7 @@ function SubTitlePage() {
         </h1>
       </div>
       <div className="text-3xl leading-10">
+        <div  className="lg:ml-44 lg:mt-12 ml-10 mt-2">{subObj.explanation}</div>
         <h3 className="lg:ml-44 lg:mt-12 ml-10 mt-2">{'Detayları görmek için bir başlık seçiniz'}</h3>
       </div>
       <div className=" ml-36 mt-[4em] mr-36">
